@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.SignUpFragment">
+
+
+    <ImageView
+        android:id="@+id/igLogo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_225mdp"
+        android:src="@drawable/vlogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16mdp"
+        android:text="Sign Up "
+        android:textColor="@color/black"
+        android:textSize="@dimen/_24font_mdp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/igLogo" />
+
+
+    <EditText
+        android:id="@+id/edName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_16mdp"
+        android:layout_marginTop="@dimen/_20mdp"
+        android:layout_marginRight="@dimen/_16mdp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:hint=" Name"
+        android:inputType="textPersonName"
+        android:padding="@dimen/_8mdp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/edEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_16mdp"
+        android:layout_marginTop="@dimen/_16mdp"
+        android:layout_marginRight="@dimen/_16mdp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:hint=" Email"
+        android:inputType="textEmailAddress"
+        android:padding="@dimen/_8mdp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/edName"
+        app:layout_constraintStart_toStartOf="@+id/edName"
+        app:layout_constraintTop_toBottomOf="@+id/edName" />
+
+    <EditText
+        android:id="@+id/edPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_16mdp"
+        android:layout_marginTop="@dimen/_16mdp"
+        android:layout_marginRight="@dimen/_16mdp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:hint=" Password"
+        android:inputType="textPassword"
+        android:padding="@dimen/_8mdp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/edEmailAddress"
+        app:layout_constraintStart_toStartOf="@+id/edEmailAddress"
+        app:layout_constraintTop_toBottomOf="@+id/edEmailAddress" />
+
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_24mdp"
+        android:layout_marginRight="@dimen/_16mdp"
+        android:layout_marginLeft="@dimen/_16mdp"
+        android:background="@drawable/rectangle_bg"
+        android:text="Sign Up"
+        android:textSize="@dimen/_12font_mdp"
+        app:layout_constraintEnd_toEndOf="@+id/edPassword"
+        app:layout_constraintStart_toStartOf="@+id/edPassword"
+        app:layout_constraintTop_toBottomOf="@+id/edPassword" />
+
+    <TextView
+        android:id="@+id/txAlreadyAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16mdp"
+        android:text="Already Have Account !!"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12mdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnSignUp"
+        app:layout_constraintStart_toStartOf="@+id/btnSignUp"
+        app:layout_constraintTop_toBottomOf="@+id/btnSignUp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
