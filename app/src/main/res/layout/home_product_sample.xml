@@ -24,8 +24,8 @@
 
             <ImageView
                 android:id="@+id/igProductImage"
-                android:layout_width="@dimen/_140mdp"
-                android:layout_height="@dimen/_130mdp"
+                android:layout_width="@dimen/_120mdp"
+                android:layout_height="@dimen/_110mdp"
                 android:layout_margin="@dimen/_3mdp"
                 android:src="@drawable/ring"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -37,7 +37,7 @@
                 android:id="@+id/txProductName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="@dimen/_6mdp"
+                android:layout_margin="@dimen/_4mdp"
                 android:text="Gold Love Ring"
                 android:textColor="@color/black"
                 android:textSize="@dimen/_12font_mdp"

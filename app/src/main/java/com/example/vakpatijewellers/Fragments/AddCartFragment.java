@@ -28,6 +28,13 @@ public class AddCartFragment extends Fragment {
         // Inflate the layout for this fragment
         binding = FragmentAddCartBinding.inflate(getLayoutInflater());
 
+        binding.igSearch.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                binding.svSearchView2.setVisibility(View.VISIBLE);
+            }
+        });
+
 
         return binding.getRoot();
     }

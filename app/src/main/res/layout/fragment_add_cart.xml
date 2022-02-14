@@ -11,10 +11,10 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
         android:layout_marginStart="@dimen/_16mdp"
-        android:text="@string/vakpati"
+        android:layout_marginTop="@dimen/_6mdp"
         android:fontFamily="serif-monospace"
+        android:text="@string/vakpati"
         android:textColor="@color/black"
         android:textSize="@dimen/_16font_mdp"
         android:textStyle="bold"
@@ -23,11 +23,42 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <SearchView
+        android:id="@+id/svSearchView2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_32mdp"
+        android:background="@drawable/border"
+        android:layout_marginTop="@dimen/_2mdp"
+        android:layout_marginRight="@dimen/_8mdp"
+        android:layout_marginLeft="@dimen/_8mdp"
+        android:elevation="@dimen/_20mdp"
+        android:queryHint="Search Here....."
+        android:backgroundTint="@color/white"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </SearchView>
+
+    <ImageView
+        android:id="@+id/igSearch"
+        android:layout_width="@dimen/_25mdp"
+        android:layout_height="@dimen/_22mdp"
+        android:layout_marginRight="@dimen/_8mdp"
+        android:src="?android:attr/actionModeWebSearchDrawable"
+        app:layout_constraintBottom_toBottomOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/textView3" />
+
+
+
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:background="@color/white"
-        android:layout_marginTop="@dimen/_4mdp"
+        android:layout_marginTop="@dimen/_10mdp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
