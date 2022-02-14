@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_8mdp"
+        android:elevation="@dimen/_48mdp"
+        app:cardCornerRadius="@dimen/_16mdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/white">
+
+            <ImageView
+                android:id="@+id/igProductImage"
+                android:layout_width="@dimen/_120mdp"
+                android:layout_height="@dimen/_100mdp"
+                android:src="@drawable/ring"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txProductName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8mdp"
+                android:text="Gold Love Ring"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14font_mdp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/igProductImage"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txProductPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8mdp"
+                android:text="$150"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14font_mdp"
+                app:layout_constraintEnd_toEndOf="@+id/txProductName"
+                app:layout_constraintStart_toStartOf="@+id/txProductName"
+                app:layout_constraintTop_toBottomOf="@+id/txProductName" />
+
+
+            <ImageView
+                android:id="@+id/igAdd"
+                android:layout_width="@dimen/_30mdp"
+                android:layout_height="@dimen/_30mdp"
+                android:layout_marginStart="@dimen/_16mdp"
+                android:layout_marginBottom="@dimen/_4mdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/igProductImage"
+                app:layout_constraintTop_toBottomOf="@+id/txProductPrice"
+                app:srcCompat="@android:drawable/ic_input_add" />
+
+            <TextView
+                android:id="@+id/txQuantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8mdp"
+                android:text="1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_21font_mdp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/igAdd"
+                app:layout_constraintStart_toEndOf="@+id/igAdd"
+                app:layout_constraintTop_toTopOf="@+id/igAdd" />
+
+            <ImageView
+                android:id="@+id/igSubtract"
+                android:layout_width="@dimen/_20mdp"
+                android:layout_height="@dimen/_30mdp"
+                android:layout_marginStart="@dimen/_8mdp"
+                app:layout_constraintBottom_toBottomOf="@+id/txQuantity"
+                app:layout_constraintEnd_toEndOf="@+id/txProductPrice"
+                app:layout_constraintStart_toEndOf="@+id/txQuantity"
+                app:layout_constraintTop_toTopOf="@+id/txQuantity"
+                app:srcCompat="@android:drawable/button_onoff_indicator_on" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

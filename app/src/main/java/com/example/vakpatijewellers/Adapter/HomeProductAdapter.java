@@ -1,6 +1,7 @@
 package com.example.vakpatijewellers.Adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -53,6 +54,14 @@ public class HomeProductAdapter extends RecyclerView.Adapter<HomeProductAdapter.
                         .replace(R.id.frMainContainer, new ProductDetailFragment())
                         .addToBackStack(null)
                         .commit();
+
+//                Intent intent = new Intent(context,ProductDetailFragment.class);
+//                intent.putExtra("Product Image",homeProduct.getProductImage());
+//                intent.putExtra("Product Name",homeProduct.getProductName());
+//                intent.putExtra("Product Type",homeProduct.getProductType());
+//                intent.putExtra("Product Price",homeProduct.getProductPrice());
+//                context.startActivity(intent);
+
             }
         });
 

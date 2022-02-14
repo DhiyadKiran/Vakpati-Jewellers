@@ -1,10 +1,202 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/golden"
     tools:context=".Fragments.ProductDetailFragment">
 
 
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16mdp"
+        android:layout_marginTop="@dimen/_6mdp"
+        android:fontFamily="serif-monospace"
+        android:text="@string/vakpati"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_16font_mdp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_10mdp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_4mdp"
+            android:elevation="@dimen/_48mdp"
+            app:cardCornerRadius="@dimen/_16mdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:id="@+id/igProductImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_250mdp"
+                    android:src="@drawable/ring5"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="@dimen/_25mdp"
+                    android:layout_height="@dimen/_25mdp"
+                    android:layout_margin="@dimen/_16mdp"
+                    android:src="@drawable/ic_heart_unselected"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/txProductName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_16mdp"
+            android:text="Golden Krishna Ring"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_18font_mdp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView2" />
+
+        <TextView
+            android:id="@+id/txProductPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/_16mdp"
+            android:text="$ 1000"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_18font_mdp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/txProductName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txProductName" />
+
+
+        <TextView
+            android:id="@+id/txDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_24mdp"
+            android:text="Detail :"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16font_mdp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/txProductName"
+            app:layout_constraintTop_toBottomOf="@+id/txProductName" />
+
+        <TextView
+            android:id="@+id/txProductName2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_14mdp"
+            android:text="Jewellery Type : "
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14font_mdp"
+            app:layout_constraintStart_toStartOf="@+id/txDetail"
+            app:layout_constraintTop_toBottomOf="@+id/txDetail" />
+
+        <TextView
+            android:id="@+id/txProductType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8mdp"
+            android:text="Ring "
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14font_mdp"
+            app:layout_constraintBottom_toBottomOf="@+id/txProductName2"
+            app:layout_constraintStart_toEndOf="@+id/txProductName2"
+            app:layout_constraintTop_toTopOf="@+id/txProductName2" />
+
+        <TextView
+            android:id="@+id/txProductDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8mdp"
+            android:text="Weight : "
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14font_mdp"
+            app:layout_constraintStart_toStartOf="@+id/txProductName2"
+            app:layout_constraintTop_toBottomOf="@+id/txProductName2" />
+
+        <TextView
+            android:id="@+id/txProductWight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8mdp"
+            android:text="18.0 g"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14font_mdp"
+            app:layout_constraintBottom_toBottomOf="@+id/txProductDetail"
+            app:layout_constraintStart_toEndOf="@+id/txProductDetail"
+            app:layout_constraintTop_toTopOf="@+id/txProductDetail" />
+
+        <TextView
+            android:id="@+id/txProductDetail1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8mdp"
+            android:text="Material : "
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14font_mdp"
+            app:layout_constraintStart_toStartOf="@+id/txProductDetail"
+            app:layout_constraintTop_toBottomOf="@+id/txProductDetail" />
+
+        <TextView
+            android:id="@+id/txProductMaterial"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8mdp"
+            android:text="Gold, Rhinestones"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14font_mdp"
+            app:layout_constraintBottom_toBottomOf="@+id/txProductDetail1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/txProductDetail1"
+            app:layout_constraintTop_toTopOf="@+id/txProductDetail1"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Button
+            android:id="@+id/btnAddToCart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/_16mdp"
+            android:layout_marginLeft="@dimen/_16mdp"
+            android:background="@drawable/border"
+            android:text="Add To Cart"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txProductDetail1" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
