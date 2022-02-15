@@ -41,8 +41,6 @@ public class SignInFragment extends Fragment {
         Email =spf.getString("UserEmail" , null);
         Password =spf.getString("UserPassword",null);
 
-        Toast.makeText(getContext(), ""+Email, Toast.LENGTH_SHORT).show();
-        Toast.makeText(getContext(), ""+Password, Toast.LENGTH_SHORT).show();
 
        binding.txRegister.setOnClickListener(new View.OnClickListener() {
            @Override
@@ -59,15 +57,12 @@ public class SignInFragment extends Fragment {
                 UserEmail = binding.edEmailAddress.getText().toString();
                 UserPassword = binding.edPassword.getText().toString();
 
-                if (UserEmail == Email){
+                if (UserEmail.equals(Email) && UserPassword.equals(Password)){
                     Intent intent = new Intent(getContext(), MainActivity.class);
                     startActivity(intent);
                     requireActivity().finishAffinity();
                 }
                 else {
-                    Intent intent = new Intent(getContext(), MainActivity.class);
-                    startActivity(intent);
-                    requireActivity().finishAffinity();
                     binding.edEmailAddress.setError("Something Went Wrong ");
                     binding.edPassword.setError("Something Went Wrong ");
                 }

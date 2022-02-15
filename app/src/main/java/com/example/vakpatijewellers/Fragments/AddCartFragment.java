@@ -3,6 +3,7 @@ package com.example.vakpatijewellers.Fragments;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.GridLayoutManager;
 
 import android.view.LayoutInflater;
@@ -41,6 +42,16 @@ public class AddCartFragment extends Fragment {
             }
         });
 
+
+        binding.btnPay.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                FragmentTransaction fragmentTransaction = getParentFragmentManager().beginTransaction();
+                fragmentTransaction.replace(R.id.frMainContainer , new CongressScreenFragment())
+                        .addToBackStack(null).commit();
+            }
+        });
 
         //AddCart RecyclerView
         addCarts = new ArrayList<>();

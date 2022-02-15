@@ -2,6 +2,7 @@ package com.example.vakpatijewellers.Adapter;
 
 import android.content.Context;
 import android.content.Intent;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -49,6 +50,12 @@ public class HomeProductAdapter extends RecyclerView.Adapter<HomeProductAdapter.
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+//                Bundle bundle =  new Bundle();
+//                bundle.putInt("Product Image",homeProduct.getProductImage());
+//                bundle.putString("Product Name",homeProduct.getProductName());
+//                bundle.putString("Product Type",homeProduct.getProductType());
+//                bundle.putString("Product Price",homeProduct.getProductPrice());
 
                 ((FragmentActivity) context).getSupportFragmentManager().beginTransaction()
                         .replace(R.id.frMainContainer, new ProductDetailFragment())
